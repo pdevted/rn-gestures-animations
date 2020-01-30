@@ -14,6 +14,11 @@ export const examples = [
     title: "useTransition()",
     source: require("../../assets/examples/useTransition.png"),
   },
+  {
+    screen: "Transitions",
+    title: "Transitions",
+    source: require("../../assets/examples/transitions.png"),
+  },
 ];
 
 const styles = StyleSheet.create({

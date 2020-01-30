@@ -6,6 +6,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import { LoadAssets, StyleGuide, cards } from "./src/components";
 import Examples, { examples } from "./src/Examples";
 import UseTransition from "./src/UseTransition";
+import Transitions from "./src/Transitions";
 
 const fonts = {
   "SFProText-Bold": require("./assets/fonts/SF-Pro-Text-Bold.otf"),
@@ -32,6 +33,12 @@ const AppNavigator = createAppContainer(
         screen: UseTransition,
         navigationOptions: {
           title: "useTransition()",
+        },
+      },
+      Transitions: {
+        screen: Transitions,
+        navigationOptions: {
+          title: "Transitions",
         },
       },
     },
