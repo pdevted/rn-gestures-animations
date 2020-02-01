@@ -6,6 +6,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import { LoadAssets, StyleGuide, cards } from "./src/components";
 import Examples, { examples } from "./src/Examples";
 import UseTransition from "./src/UseTransition";
+import UseTransition2 from "./src/UseTransition2";
 import Transitions from "./src/Transitions";
 
 const fonts = {
@@ -29,7 +30,7 @@ const AppNavigator = createAppContainer(
           headerBackTitle: undefined,
         },
       },
-      useTransition: {
+      UseTransition: {
         screen: UseTransition,
         navigationOptions: {
           title: "useTransition()",
@@ -39,6 +40,12 @@ const AppNavigator = createAppContainer(
         screen: Transitions,
         navigationOptions: {
           title: "Transitions",
+        },
+      },
+      UseTransition2: {
+        screen: UseTransition2,
+        navigationOptions: {
+          title: "UseTransition2()",
         },
       },
     },

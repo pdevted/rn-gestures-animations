@@ -10,7 +10,7 @@ import { StyleGuide, Thumbnail } from "../components";
 
 export const examples = [
   {
-    screen: "useTransition",
+    screen: "UseTransition",
     title: "useTransition()",
     source: require("../../assets/examples/useTransition.png"),
   },
@@ -18,6 +18,11 @@ export const examples = [
     screen: "Transitions",
     title: "Transitions",
     source: require("../../assets/examples/transitions.png"),
+  },
+  {
+    screen: "UseTransition2",
+    title: "useTransition2()",
+    source: require("../../assets/examples/useTransition.png"),
   },
 ];
 
