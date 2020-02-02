@@ -31,6 +31,11 @@ export const examples = [
     resizeMode: "cover" as "cover",
     dark: true,
   },
+  {
+    screen: "Timing",
+    title: "Timing",
+    source: require("../../assets/examples/timing.png"),
+  },
 ];
 
 const styles = StyleSheet.create({

@@ -9,6 +9,7 @@ import DarkMode, { profilePic } from "./src/DarkMode";
 import UseTransition from "./src/UseTransition";
 import UseTransition2 from "./src/UseTransition2";
 import Transitions from "./src/Transitions";
+import Timing from "./src/Timing";
 
 const fonts = {
   "SFProText-Bold": require("./assets/fonts/SF-Pro-Text-Bold.otf"),
@@ -54,6 +55,12 @@ const AppNavigator = createAppContainer(
         screen: DarkMode,
         navigationOptions: {
           title: "Dark Mode",
+        },
+      },
+      Timing: {
+        screen: Timing,
+        navigationOptions: {
+          title: "Timing",
         },
       },
     },
