@@ -5,6 +5,7 @@ import { createStackNavigator } from "react-navigation-stack";
 
 import { LoadAssets, StyleGuide, cards } from "./src/components";
 import Examples, { examples } from "./src/Examples";
+import DarkMode, { profilePic } from "./src/DarkMode";
 import UseTransition from "./src/UseTransition";
 import UseTransition2 from "./src/UseTransition2";
 import Transitions from "./src/Transitions";
@@ -18,6 +19,7 @@ const fonts = {
 const assets = [
   ...examples.map(example => example.source),
   ...cards.map(card => card.source),
+  profilePic,
 ];
 
 const AppNavigator = createAppContainer(
@@ -46,6 +48,12 @@ const AppNavigator = createAppContainer(
         screen: UseTransition2,
         navigationOptions: {
           title: "UseTransition2()",
+        },
+      },
+      DarkMode: {
+        screen: DarkMode,
+        navigationOptions: {
+          title: "Dark Mode",
         },
       },
     },

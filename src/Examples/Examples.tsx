@@ -24,6 +24,13 @@ export const examples = [
     title: "useTransition2()",
     source: require("../../assets/examples/useTransition.png"),
   },
+  {
+    screen: "DarkMode",
+    title: "Dark Mode",
+    source: require("../../assets/examples/dark-mode.png"),
+    resizeMode: "cover" as "cover",
+    dark: true,
+  },
 ];
 
 const styles = StyleSheet.create({
