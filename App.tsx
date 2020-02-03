@@ -10,6 +10,7 @@ import UseTransition from "./src/UseTransition";
 import UseTransition2 from "./src/UseTransition2";
 import Transitions from "./src/Transitions";
 import Timing from "./src/Timing";
+import PanGesture from "./src/PanGesture";
 
 const fonts = {
   "SFProText-Bold": require("./assets/fonts/SF-Pro-Text-Bold.otf"),
@@ -61,6 +62,12 @@ const AppNavigator = createAppContainer(
         screen: Timing,
         navigationOptions: {
           title: "Timing",
+        },
+      },
+      PanGesture: {
+        screen: PanGesture,
+        navigationOptions: {
+          title: "Pan Gesture",
         },
       },
     },

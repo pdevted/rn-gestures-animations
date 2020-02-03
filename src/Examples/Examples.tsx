@@ -36,6 +36,11 @@ export const examples = [
     title: "Timing",
     source: require("../../assets/examples/timing.png"),
   },
+  {
+    screen: "PanGesture",
+    title: "Pan Gesture",
+    source: require("../../assets/examples/pan-gesture.png"),
+  },
 ];
 
 const styles = StyleSheet.create({
