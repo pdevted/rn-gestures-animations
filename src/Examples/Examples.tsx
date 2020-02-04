@@ -41,6 +41,11 @@ export const examples = [
     title: "Pan Gesture",
     source: require("../../assets/examples/pan-gesture.png"),
   },
+  {
+    screen: "Decay",
+    title: "Decay",
+    source: require("../../assets/examples/decay.png"),
+  },
 ];
 
 const styles = StyleSheet.create({

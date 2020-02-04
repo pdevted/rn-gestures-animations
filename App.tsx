@@ -11,6 +11,7 @@ import UseTransition2 from "./src/UseTransition2";
 import Transitions from "./src/Transitions";
 import Timing from "./src/Timing";
 import PanGesture from "./src/PanGesture";
+import Decay from "./src/Decay";
 
 const fonts = {
   "SFProText-Bold": require("./assets/fonts/SF-Pro-Text-Bold.otf"),
@@ -68,6 +69,12 @@ const AppNavigator = createAppContainer(
         screen: PanGesture,
         navigationOptions: {
           title: "Pan Gesture",
+        },
+      },
+      Decay: {
+        screen: Decay,
+        navigationOptions: {
+          title: "Decay",
         },
       },
     },
