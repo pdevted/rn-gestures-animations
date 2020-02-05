@@ -46,6 +46,11 @@ export const examples = [
     title: "Decay",
     source: require("../../assets/examples/decay.png"),
   },
+  {
+    screen: "Spring",
+    title: "Spring",
+    source: require("../../assets/examples/spring.png"),
+  },
 ];
 
 const styles = StyleSheet.create({
