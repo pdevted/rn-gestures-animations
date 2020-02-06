@@ -1,18 +1,19 @@
-import React from "react";
-import { StatusBar } from "react-native";
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
-
-import { LoadAssets, StyleGuide, cards } from "./src/components";
-import Examples, { examples } from "./src/Examples";
 import DarkMode, { profilePic } from "./src/DarkMode";
+import Examples, { examples } from "./src/Examples";
+import { LoadAssets, StyleGuide, cards } from "./src/components";
+import Swipe, { profiles } from "./src/Swipe";
+
+import Decay from "./src/Decay";
+import PanGesture from "./src/PanGesture";
+import React from "react";
+import Spring from "./src/Spring";
+import { StatusBar } from "react-native";
+import Timing from "./src/Timing";
+import Transitions from "./src/Transitions";
 import UseTransition from "./src/UseTransition";
 import UseTransition2 from "./src/UseTransition2";
-import Transitions from "./src/Transitions";
-import Timing from "./src/Timing";
-import PanGesture from "./src/PanGesture";
-import Decay from "./src/Decay";
-import Spring from "./src/Spring";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
 
 const fonts = {
   "SFProText-Bold": require("./assets/fonts/SF-Pro-Text-Bold.otf"),
@@ -23,6 +24,7 @@ const fonts = {
 const assets = [
   ...examples.map(example => example.source),
   ...cards.map(card => card.source),
+  ...profiles.map(profile => profile.profile),
   profilePic,
 ];
 
@@ -82,6 +84,12 @@ const AppNavigator = createAppContainer(
         screen: Spring,
         navigationOptions: {
           title: "Spring",
+        },
+      },
+      Swipe: {
+        screen: Swipe,
+        navigationOptions: {
+          title: "Swipe",
         },
       },
     },

@@ -1,11 +1,11 @@
 import * as React from "react";
+
 import {
   NavigationScreenConfigProps,
   NavigationScreenProp,
   NavigationState,
 } from "react-navigation";
 import { ScrollView, StyleSheet } from "react-native";
-
 import { StyleGuide, Thumbnail } from "../components";
 
 export const examples = [
@@ -50,6 +50,11 @@ export const examples = [
     screen: "Spring",
     title: "Spring",
     source: require("../../assets/examples/spring.png"),
+  },
+  {
+    screen: "Swipe",
+    title: "Swipe",
+    source: require("../../assets/examples/swipe.png"),
   },
 ];
 
